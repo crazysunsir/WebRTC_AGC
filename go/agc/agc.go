@@ -2,6 +2,11 @@ package agc
 
 /*
 #cgo CFLAGS: -I${SRCDIR}/../..
+// 链接到编译好的 dylib 文件
+// -L${SRCDIR}/../../build: 指定库文件搜索路径（build 目录）
+// -lagc: 链接 libagc.dylib 库
+// -lm: 链接数学库
+// -Wl,-rpath,${SRCDIR}/../../build: 设置运行时库搜索路径，确保能找到 dylib
 #cgo LDFLAGS: -L${SRCDIR}/../../build -lagc -lm -Wl,-rpath,${SRCDIR}/../../build
 #include "agc_wrapper.h"
 #include <stdlib.h>
