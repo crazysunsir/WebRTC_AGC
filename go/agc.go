@@ -1,8 +1,8 @@
 package agc
 
 /*
-#cgo CFLAGS: -I${SRCDIR}/../..
-#cgo LDFLAGS: -L${SRCDIR}/../../build -lagc -lm -Wl,-rpath,${SRCDIR}/../../build
+#cgo CFLAGS: -I${SRCDIR}/..
+#cgo LDFLAGS: -L${SRCDIR}/../build -lagc -lm -Wl,-rpath,${SRCDIR}/../build
 #include "agc_wrapper.h"
 #include <stdlib.h>
 */
